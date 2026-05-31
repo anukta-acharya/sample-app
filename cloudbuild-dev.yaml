@@ -8,7 +8,7 @@ steps:
       [
         'build',
         '-t',
-        'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild-dev:v1.0',
+        'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild-dev:v2.0',
         '.'
       ]
 
@@ -16,7 +16,7 @@ steps:
     args:
       [
         'push',
-        'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild-dev:v1.0'
+        'us-central1-docker.pkg.dev/$PROJECT_ID/my-repository/hello-cloudbuild-dev:v2.0'
       ]
 
   - name: 'gcr.io/cloud-builders/kubectl'
